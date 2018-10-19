@@ -1,10 +1,12 @@
 def prime?(number)
-  d = 2
-  if number == d
-    return true
-  elsif number <= 1 || number % d == 0 
-    return false
-  else 
-    return true
-end
-end
+  if number < 2 
+   return false
+  end
+ (2..(number - 1 )).each do |n|
+     return false if number % n == 0
+    end 
+     true
+    end
+  
+
+
